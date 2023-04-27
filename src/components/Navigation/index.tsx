@@ -4,9 +4,9 @@ import * as S from './style'
 const Navigation = () => {
     return (
         <S.Container>
-            <S.NavLink href={'/'}>All Cards</S.NavLink>
-            <S.NavLink href={'/'}>Divine Beats</S.NavLink>
-            <S.NavLink href={'/'}>Search your card</S.NavLink>
+            <S.NavLink href={'/'}>Todas as Cartas</S.NavLink>
+            <S.NavLink href={'/'}>Bestas Divinas</S.NavLink>
+            <S.NavLink href={'/'}>Procure sua carta</S.NavLink>
         </S.Container>
     )
 }

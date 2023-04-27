@@ -1,12 +1,15 @@
 import React from 'react'
 import * as S from './style'
-import bg from '../../../public/bg.png'
 
 const Dashboard = () => {
     return (
         <S.Container>
-            <S.Text>É hora do duelo!</S.Text>
-            <S.Button>Procure sua carta</S.Button>
+            <S.Content>
+                <S.Text>É HORA DO DUELO!</S.Text>
+                <S.Hexagon>
+                    <S.Span>GO</S.Span>
+                </S.Hexagon>
+            </S.Content>
         </S.Container>
     )
 }

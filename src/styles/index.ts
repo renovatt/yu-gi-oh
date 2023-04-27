@@ -1,4 +1,3 @@
-
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
@@ -6,61 +5,57 @@ export const GlobalStyle = createGlobalStyle`
 :root {
     --max-width: 1100px;
 
-    --main-background: #ffffff; 
-    --primary-background: #fb8500;
-    --secondary-background: #024959;
-    --alert-background-color: #f94144;
+    --main-background-color: #ffffff;
+    --primary-background-color: #f50d60;
+    --secondary-background-color: #dacc7d;
+    --third-background-color: #bb0327;
+    --dark-background-color: #dacc7d;
 
-    --text-clean-color: #d1e7e0;
-    --text-alert-color: #f01;
     --text-main-color: #ffffff;
-    --text-primary-color: #fb8500;
-    --text-secondary-color: #024959;
+    --text-primary-color: #f50d60;
+    --text-secondary-color: #dacc7d;
     
-    --border-primary-color: #fb8500;
-    --border-secondary-color: #024959;
-    --border-clean-color: #ccc;
-
-    --input-background-color: #ffffff;
-
-    --modal-input-text-color: #ffffff;
-    --modal-label-text-color: #ffffff;
-    --modal-input-background-color: #024959;
+    --border-primary-color: #f50d60;
+    --border-secondary-color: #dacc7d;
+    --border-clean-color: #cccccc;
 
     --svg-main-color: #ffffff;
-    --svg-primary-color: #fb8500;
-    --svg-secondary-color: #024959;
+    --svg-primary-color: #f50d60;
+    --svg-secondary-color: #dacc7d;
 }
 
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
 }
 
 body {
     min-width: 100vw;
     min-height: 100vh;
-    background: var(--background-white-color);
+    background: var(--main-background-color);
+    background-image: url('/bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: var(--max-width); */
 }
 
 ::-webkit-scrollbar{
     width: 6px;
 }
 ::-webkit-scrollbar-track{
-    background-color: #fff;
-    border-radius: .4rem;
+    background-color: var(--main-background-color);
 }
 ::-webkit-scrollbar-thumb{
-    background: #ed2f5a;
-    border-radius: .4rem;
+    background-color: var(--primary-background-color);
 }
 
 html {
