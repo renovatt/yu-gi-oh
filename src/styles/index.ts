@@ -47,7 +47,8 @@ body {
 
 main{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 ::-webkit-scrollbar{
