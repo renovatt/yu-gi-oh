@@ -1,23 +1,23 @@
 import React from 'react'
 import * as S from './style'
-import { CardListContext } from '@/contexts'
+import Router from 'next/router'
+import { CardParamsProps } from '@/@types'
 
-const CardList = () => {
-    const { loader, cards, loadCards } = React.useContext(CardListContext)
-
-    React.useEffect(() => {
-        loadCards()
-    }, [])
-
+const CardList = ({ card }: CardParamsProps) => {
+    const getCardId = (id: string) => {
+        Router.push(`/card/${id}`)
+    }
     return (
         <S.Container>
             <S.Nav>
-                {loader && <p>Buscando..</p>}
-                {cards?.map(card => (
-                    <S.ListContainer>
-                        <S.List key={card.id}>{card.name}</S.List>
+                {card.length ? card?.map((card: any) => (
+                    <S.ListContainer key={card.id}>
+                        <S.List
+                            key={card.id}
+                            onClick={() => getCardId(card.id as unknown as string)}
+                        >{card.name}</S.List>
                     </S.ListContainer>
-                ))}
+                )) : <p>Buscando..</p>}
             </S.Nav>
         </S.Container>
     )

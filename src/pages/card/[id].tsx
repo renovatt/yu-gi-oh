@@ -2,9 +2,9 @@ import React from 'react'
 import CardInfo from '@/components/CardInfo'
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 import { getAllCards, getCardById } from '@/services';
-import { CardParamsProsps, CardProps, ResponseCardProps } from '@/@types';
+import { CardParamsProps, CardProps } from '@/@types';
 
-const Card = ({ card }: CardParamsProsps) => {
+const Card = ({ card }: CardParamsProps) => {
     return <CardInfo card={card} />
 }
 

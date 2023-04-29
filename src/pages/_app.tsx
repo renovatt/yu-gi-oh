@@ -9,9 +9,9 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <GlobalStyle />
       <CardListContextProvider>
-        <Header />
+        {/* <Header /> */}
         <Component {...pageProps} />
-        <Footer />
+        {/* <Footer /> */}
       </CardListContextProvider>
     </>
   )
