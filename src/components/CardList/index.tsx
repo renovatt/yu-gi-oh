@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from './style'
 import Router from 'next/router'
-import { CardParamsProps } from '@/@types'
+import { CardParamsProps, CardProps } from '@/@types'
 
 const CardList = ({ card }: CardParamsProps) => {
     const getCardId = (id: string) => {
@@ -10,7 +10,7 @@ const CardList = ({ card }: CardParamsProps) => {
     return (
         <S.Container>
             <S.Nav>
-                {card.length ? card?.map((card: any) => (
+                {card.length ? card?.map((card: CardProps) => (
                     <S.ListContainer key={card.id}>
                         <S.List
                             key={card.id}

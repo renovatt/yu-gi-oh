@@ -1,14 +1,14 @@
 import * as S from './style'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
-export const Footer = () => {
+const Footer = () => {
     const date = new Date()
     const currentYear = date.getFullYear()
     return (
         <S.Footer>
             <S.FooterDescription>
                 <S.FooterContent>
-                    <S.FooterCopyright>&copy; {currentYear} willcode | Powered by 
+                    <S.FooterCopyright>&copy; {currentYear} willcode | Powered by
                         <S.FooterLink
                             href="https://www.linkedin.com/in/renovatt"
                             target="_blank">renovatt
@@ -33,3 +33,5 @@ export const Footer = () => {
         </S.Footer>
     )
 }
+
+export default Footer;

@@ -1,11 +1,11 @@
 import React from 'react'
-import CardList from '@/components/CardList';
 import { GetServerSideProps } from 'next';
 import { CardListParamsProps } from '@/@types';
 import { getAllCards } from '@/services';
+import Cards from '@/views/cards';
 
 const AllCards = ({ cards }: CardListParamsProps) => {
-    return <CardList card={cards} />
+    return <Cards card={cards} />;
 }
 
 export default AllCards;
