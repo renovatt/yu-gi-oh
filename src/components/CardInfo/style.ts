@@ -7,6 +7,12 @@ export const Container = styled.section`
     align-items: center;
     width: 100vw;
     height: 100vh;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    background-image: url('/card-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 `
 
 export const Content = styled.section`
@@ -15,8 +21,8 @@ export const Content = styled.section`
     align-items: center;
     width: 100%;
     height: 100%;
-
-    border: 1px solid #000;
+    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, .7);
 `
 
 export const InfoContent = styled.section`
@@ -25,7 +31,7 @@ export const InfoContent = styled.section`
     align-items: flex-start;
     flex-direction: column;
     width: 40%;
-    height: 80%;
+    height: 60%;
 `
 
 export const CardImageContent = styled.figure`
@@ -44,11 +50,11 @@ export const CardImageContent = styled.figure`
 `
 
 export const Text = styled.h4`
-    color: #000;
+    color: var(--text-primary-color);
 `
 
 export const Span = styled.span`
-    color: #555;
+    color: var(--text-main-color);
     text-align: justify;
 `
 
@@ -61,16 +67,19 @@ export const BackButton = styled.button`
     right: 2rem;
     width: 8rem;
     height: 2rem;
-    color: #fff;
+    color: var(--text-primary-color);
     padding: .5rem;
     outline: none;
     font-weight: bold;
-    background-color: #000;
+    font-size: 1.1rem;
+    background-color: var(--main-background-color);
     border-radius: .5rem;
-    border: 1px solid #000;
+    border: 1px solid var(--border-main-color);
 
     &:hover{
-        background-color: #fff;
-        color: #000;
+        transition: all .3s;
+        background-color: var(--primary-background-color);
+        border-color: var(--border-main-color);
+        color: var(--text-main-color);
     }
 `

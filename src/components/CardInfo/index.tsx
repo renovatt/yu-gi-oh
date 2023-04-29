@@ -16,7 +16,7 @@ const CardInfo = ({ card: [card] }: CardParamsProps) => {
             <Head>
                 <title>Yu-Gi-Oh | {card.name}</title>
             </Head>
-            <S.Container>
+            <S.Container className='fade'>
                 <S.Content>
                     <S.InfoContent>
                         <S.Text>ID: <S.Span>{card.id}</S.Span></S.Text>

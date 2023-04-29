@@ -3,7 +3,7 @@ import * as S from './style'
 
 const Dashboard = () => {
     return (
-        <S.Container>
+        <S.Container className='fade'>
             <S.Content>
                 <S.Text>É HORA DO DUELO!</S.Text>
                 <S.Hexagon href={'/all-cards'}>

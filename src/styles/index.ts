@@ -7,21 +7,26 @@ export const GlobalStyle = createGlobalStyle`
 
     --main-background-color: #ffffff;
     --primary-background-color: #f50d60;
-    --secondary-background-color: #dacc7d;
-    --linear-background-color: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(43,4,98,1) 100%);
+    --secondary-background-color: #f35b04;
+    
+    --primary-background-color: #9d04f3;
+    --secondary-background-color: #10002b;
+
+    --linear-up-background-color: linear-gradient(180deg, rgba(53,12,54,1) 0%, rgba(157,4,243,1) 100%);
+    --linear-down-background-color: linear-gradient(0deg, rgba(53,12,54,1) 0%, rgba(157,4,243,1) 100%);
     
     --text-main-color: #ffffff;
-    --text-primary-color: #f50d60;
-    --text-secondary-color: #dacc7d;
+    --text-primary-color: #9d04f3;
+    --text-secondary-color: #10002b;
     
     --border-main-color: #ffffff;
-    --border-primary-color: #f50d60;
-    --border-secondary-color: #dacc7d;
+    --border-primary-color: #9d04f3;
+    --border-secondary-color: #10002b;
     --border-clean-color: #cccccc;
 
     --svg-main-color: #ffffff;
-    --svg-primary-color: #f50d60;
-    --svg-secondary-color: #dacc7d;
+    --svg-primary-color: #9d04f3;
+    --svg-secondary-color: #10002b;
 }
 
 *{

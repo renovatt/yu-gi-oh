@@ -11,8 +11,8 @@ export const Footer = styled.footer`
     height: 5rem;
     width: 100%;
     padding: 2rem calc(4rem + 15px) 2rem 4rem;
-    background: var(--linear-background-color);
-    border-top: 1px solid var(--border-primary-color);
+    background: var(--linear-down-background-color);
+    /* border-top: 1px solid var(--border-primary-color); */
 
     @media(max-width: 55.625rem) {
         flex-direction: column;
@@ -23,7 +23,6 @@ export const Footer = styled.footer`
 export const FooterDescription = styled.div`
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
     font-weight: bold;
     color: var(--text-main-color);
 `
@@ -43,13 +42,14 @@ export const FooterContent = styled.div`
 export const FooterCopyright = styled.span`
     display: flex;
     margin: .2rem;
+    font-size: .9rem;
 `
 
 export const SocialMedia = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
 
     @media(max-width: 55.625rem) {
         margin-top: .5rem;
@@ -66,16 +66,16 @@ export const FooterLink = styled.a`
     svg{
         height: 25px;
         width: 25px;
-        color: var(--svg-secondary-color);
+        color: var(--svg-main-color);
         transition: .2s;
 
         &:hover{
-        color: var(--svg-primary-color);
-        transform: scale(1.2);
+            color: var(--svg-secondary-color);
+            transform: scale(1.2);
         }
     }
 
     &:hover{
-        color: var(--text-primary-color);
+        color: var(--text-secondary-color);
     }
 `
