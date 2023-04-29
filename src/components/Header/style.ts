@@ -8,12 +8,9 @@ export const Container = styled.header`
     padding: .5rem 2rem;
     width: 100%;
     height: 5rem;
-    background-color: transparent;
-    /* padding: 2rem calc(4rem + 15px) 2rem 4rem; */
+    background: var(--linear-background-color);
+    border-bottom: 1px solid var(--border-primary-color);
 
-    /* backdrop-filter: blur(3px); */
-    /* background: rgba(6, 11, 40, 0.149); */
-    /* border-bottom: 1px solid var(--border-primary-color); */
 `
 
 export const Content = styled.nav`

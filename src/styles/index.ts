@@ -8,13 +8,13 @@ export const GlobalStyle = createGlobalStyle`
     --main-background-color: #ffffff;
     --primary-background-color: #f50d60;
     --secondary-background-color: #dacc7d;
-    --third-background-color: #bb0327;
-    --dark-background-color: #dacc7d;
-
+    --linear-background-color: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(43,4,98,1) 100%);
+    
     --text-main-color: #ffffff;
     --text-primary-color: #f50d60;
     --text-secondary-color: #dacc7d;
     
+    --border-main-color: #ffffff;
     --border-primary-color: #f50d60;
     --border-secondary-color: #dacc7d;
     --border-clean-color: #cccccc;
@@ -35,10 +35,6 @@ body {
     min-width: 100vw;
     min-height: 100vh;
     background: var(--main-background-color);
-    background-image: url('/bg.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 
 main{

@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
 export const Footer = styled.footer`
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 5rem;
     width: 100%;
-    background: var(--third-background-color);
-    border-top: 1px solid var(--border-primary-color);
-    backdrop-filter: blur(3px);
-    background-color: transparent;
-    background: rgba(6, 11, 40, 0.149);
     padding: 2rem calc(4rem + 15px) 2rem 4rem;
+    background: var(--linear-background-color);
+    border-top: 1px solid var(--border-primary-color);
 
     @media(max-width: 55.625rem) {
         flex-direction: column;

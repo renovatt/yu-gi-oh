@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 export const Container = styled.section`
@@ -7,6 +8,10 @@ export const Container = styled.section`
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    background-image: url('/bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 `
 
 export const Content = styled.section`
@@ -35,7 +40,7 @@ export const Span = styled.span`
     color: var(--text-main-color);
 `
 
-export const Hexagon = styled.div`
+export const Hexagon = styled(Link)`
     width: 100px;
     height: 55px;
     background-color: #f50d60;

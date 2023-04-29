@@ -10,7 +10,7 @@ const Header = () => {
         <S.Container>
             <S.NavLink href={'/'}>
                 <S.LogoContainer>
-                    <Image src={logo} alt='logo' />
+                    <Image src={logo} alt='logo' priority />
                 </S.LogoContainer>
             </S.NavLink>
 

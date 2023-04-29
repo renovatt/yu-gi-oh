@@ -6,7 +6,7 @@ const Dashboard = () => {
         <S.Container>
             <S.Content>
                 <S.Text>É HORA DO DUELO!</S.Text>
-                <S.Hexagon>
+                <S.Hexagon href={'/all-cards'}>
                     <S.Span>GO</S.Span>
                 </S.Hexagon>
             </S.Content>

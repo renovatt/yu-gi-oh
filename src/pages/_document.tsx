@@ -34,6 +34,7 @@ export default class MyDocument extends Document {
         <Head>
         <meta charSet="utf-8" />
         <meta name="author" content="Wildemberg Renovato de Lima" />
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500;700&display=swap" rel="stylesheet"></link>
         </Head>
         <body>
           <Main />
