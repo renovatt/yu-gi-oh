@@ -26,8 +26,12 @@ export type CardListContextProviderProps = {
     children: React.ReactNode
 }
 
-export type CardParamsProsps = {
+export type CardParamsProps = {
     card: CardProps[];
+}
+
+export type CardListParamsProps = {
+    cards: CardProps[];
 }
 
 export type InitialValueProps = {
