@@ -1,13 +1,5 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import { Saira_Condensed } from 'next/font/google'
 import Dashboard from '@/views/dash'
-
-const inter = Inter({ subsets: ['latin'] })
-const saira = Saira_Condensed({
-  subsets: ['latin'],
-  weight: '100'
-})
 
 export default function Home() {
   return (
