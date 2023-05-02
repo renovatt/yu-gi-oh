@@ -2,14 +2,11 @@ import React from 'react'
 import * as S from './style'
 import Head from 'next/head'
 import Image from 'next/image'
-import Router from 'next/router'
+import { useRouter } from 'next/router'
 import { CardParamsProps } from '@/@types'
 
 const CardInfo = ({ card: [card] }: CardParamsProps) => {
-
-    const goBack = () => {
-        Router.push('/all-cards')
-    }
+    const router = useRouter()
 
     return (
         <>
@@ -39,7 +36,7 @@ const CardInfo = ({ card: [card] }: CardParamsProps) => {
                             height={500}
                             priority />
                     </S.CardImageContent>
-                    <S.BackButton onClick={goBack}>Voltar</S.BackButton>
+                    <S.BackButton onClick={() => router.back()}>Voltar</S.BackButton>
                 </S.Content>
             </S.Container>
         </>

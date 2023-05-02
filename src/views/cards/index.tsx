@@ -7,7 +7,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import slifer from '../../../public/slifer.jpg'
 import gallery from '../../../public/gallery.jpg'
-import magician from '../../../public/magician.jpg'
+import xyz from '../../../public/xyz.jpg'
 import CardLink from '@/components/CardLink'
 
 const Cards = ({ card }: CardParamsProps) => {
@@ -42,19 +42,19 @@ const Cards = ({ card }: CardParamsProps) => {
                         thumb={slifer}
                         alt='slifer-image'
                         text='Bestas Divinas'
-                        route='/' />
+                        route='/divine-beasts' />
 
                     <CardLink
-                        thumb={magician}
-                        alt='magician-image'
-                        text='Galeria de Magos'
-                        route='/' />
+                        thumb={xyz}
+                        alt='xyz-image'
+                        text='Monstros XYZ'
+                        route='/xyz-cards' />
 
                     <CardLink
                         thumb={gallery}
                         alt='gallery-image'
-                        text='Galeria de Cartas'
-                        route='/' />
+                        text='Todas de Cartas'
+                        route='/gallery-cards' />
                 </S.CardLinksContainer>
             </S.Container>
             <Footer />

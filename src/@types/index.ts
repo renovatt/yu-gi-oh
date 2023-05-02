@@ -37,6 +37,15 @@ export type CardListParamsProps = {
     cards: CardProps[];
 }
 
+export type UrlProps = {
+    offset: number;
+    meta: {
+        total_pages: number;
+        total_rows: number;
+        current_rows: number;
+    }
+}
+
 export type InitialValueProps = {
     error: boolean;
     loader: boolean;
