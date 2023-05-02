@@ -5,7 +5,7 @@ import { getAllCards, getCardById } from '@/services';
 import { CardParamsProps, CardProps } from '@/@types';
 
 const Card = ({ card }: CardParamsProps) => {
-    return <CardInfo card={card} />
+    return <CardInfo card={card} searchValue='' />
 }
 
 export default Card;
