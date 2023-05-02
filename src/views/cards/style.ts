@@ -62,6 +62,6 @@ export const CardLinksContainer = styled.section`
     align-items: center;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(3px);
-    background: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(5px);
+    /* background: rgba(0, 0, 0, .8); */
 `
