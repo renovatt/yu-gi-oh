@@ -8,12 +8,6 @@ export const Container = styled.section`
     width: 17rem;
     height: 100vh;
     background-color: var(--secondary-background-color);
-
-    /* background: url('/load-2.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    object-fit: cover; */
-
 `
 
 export const Nav = styled.nav`
@@ -25,8 +19,6 @@ export const Nav = styled.nav`
     height: 100%;
     background-color: transparent;
     overflow-y: scroll;
-    /* backdrop-filter: blur(3px); */
-    /* background: rgba(0, 0, 0, .8); */
 
     ::-webkit-scrollbar-track{
         background-color: transparent;
@@ -38,7 +30,6 @@ export const Nav = styled.nav`
 
 export const ListContainer = styled.ul`
     width: 100%;
-    height: 100%;
 `
 
 export const List = styled.li`

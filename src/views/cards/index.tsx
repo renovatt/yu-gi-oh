@@ -11,15 +11,30 @@ import magician from '../../../public/magician.jpg'
 import CardLink from '@/components/CardLink'
 
 const Cards = ({ card }: CardParamsProps) => {
+    const [searchValue, setSearchValue] = React.useState("");
+    const handleSearchInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchValue(event.target.value);
+    };
+
     return (
         <>
             <Head>
                 <title>Yu-Gi-Oh | Lista de Cartas</title>
             </Head>
-            <Header />
+            <S.HeaderContainer>
+                <Header />
+                <S.Form>
+                    <S.Input
+                        type='search'
+                        value={searchValue}
+                        placeholder='O Lendário Exodia Encarnado'
+                        onChange={handleSearchInputChange} />
+                </S.Form>
+            </S.HeaderContainer>
+
             <S.Container className='fade'>
                 <S.ListContainer>
-                    <CardList card={card} />
+                    <CardList card={card} searchValue={searchValue} />
                 </S.ListContainer>
 
                 <S.CardLinksContainer>
@@ -32,7 +47,7 @@ const Cards = ({ card }: CardParamsProps) => {
                     <CardLink
                         thumb={magician}
                         alt='magician-image'
-                        text='Galeria Magos'
+                        text='Galeria de Magos'
                         route='/' />
 
                     <CardLink

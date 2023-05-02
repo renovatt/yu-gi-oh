@@ -30,6 +30,7 @@ export type CardListContextProviderProps = {
 
 export type CardParamsProps = {
     card: CardProps[];
+    searchValue: string;
 }
 
 export type CardListParamsProps = {

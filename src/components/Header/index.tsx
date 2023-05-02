@@ -3,7 +3,6 @@ import * as S from './style'
 import Input from '../Input'
 import Image from 'next/image'
 import logo from '../../../public/logo.png'
-import CardLink from '../CardLink'
 
 const Header = () => {
     return (
@@ -15,7 +14,7 @@ const Header = () => {
             </S.NavLink>
 
             <S.Content>
-                <Input type='text' placeholder='O Lendário Exodia Encarnado' />
+                {/* <Input type='text' placeholder='O Lendário Exodia Encarnado' /> */}
             </S.Content>
         </S.Container>
     )
