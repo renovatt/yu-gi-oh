@@ -43,13 +43,14 @@ export const Container = styled.section`
     align-items: center;
     width: 100vw;
     height: 100vh;
-    /* background-color: var(--secondary-background-color);
+    background-color: var(--main-background-color);
+
+    background-color: var(--secondary-background-color);
     background: url('/thumb.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    object-fit: cover; */
+    object-fit: cover;
 
-    background-color: #fff;
 `
 export const ListContainer = styled.section`
     background-color: transparent;
@@ -61,6 +62,6 @@ export const CardLinksContainer = styled.section`
     align-items: center;
     width: 100%;
     height: 100%;
-    /* backdrop-filter: blur(3px); */
-    /* background: rgba(0, 0, 0, .8); */
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, .8);
 `

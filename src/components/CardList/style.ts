@@ -45,3 +45,10 @@ export const List = styled.li`
         background-color: var(--primary-background-color);
     }
 `
+
+export const Text = styled.p`
+    width: 100%;
+    font-size: .7rem;
+    padding: .4rem;
+    color: var(--text-clean-color);
+`

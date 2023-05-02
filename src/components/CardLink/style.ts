@@ -25,6 +25,7 @@ export const Card = styled.section<BannerProps>`
     border-radius: .5rem;
     margin: 2rem;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, .8);
+    overflow: hidden;
 
     /* background-color: var(--main-background-color); */
     /* background: ${(props) => props.banner?.backgroundImage}; */
@@ -38,8 +39,14 @@ export const Card = styled.section<BannerProps>`
         height: 100%;
         object-fit: cover;
         border-radius: .5rem;
-        z-index: -1;
     }
+
+    &:hover{
+            img{
+                transition: all .3s;
+                transform: scale(110%);
+            }
+        }
 `
 
 export const NavLink = styled(Link)`
@@ -56,6 +63,7 @@ export const NavLink = styled(Link)`
     color: var(--text-primary-color);
     background-color: var(--main-background-color);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .8);
+    z-index: 2;
 
     &:hover{
         transition: all .3s;

@@ -22,7 +22,7 @@ const CardList = ({ card, searchValue }: CardParamsProps) => {
                             onClick={() => getCardId(card.id as unknown as string)}
                         >{card.name}</S.List>
                     </S.ListContainer>
-                )) : <p>Nenhum resultado encontrado</p>}
+                )) : <S.Text>Nenhum resultado encontrado</S.Text>}
             </S.Nav>
         </S.Container>
     )
