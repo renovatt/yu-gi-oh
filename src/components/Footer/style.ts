@@ -12,7 +12,6 @@ export const Footer = styled.footer`
     width: 100%;
     padding: 2rem calc(4rem + 15px) 2rem 4rem;
     background: var(--linear-down-background-color);
-    /* border-top: 1px solid var(--border-primary-color); */
 
     @media(max-width: 55.625rem) {
         flex-direction: column;
@@ -23,8 +22,6 @@ export const Footer = styled.footer`
 export const FooterDescription = styled.div`
     display: flex;
     flex-direction: column;
-    font-weight: bold;
-    color: var(--text-main-color);
 `
 
 export const FooterContent = styled.div`
@@ -42,7 +39,8 @@ export const FooterContent = styled.div`
 export const FooterCopyright = styled.span`
     display: flex;
     margin: .2rem;
-    font-size: .9rem;
+    font-size: .8rem;
+    color: var(--text-main-color);
 `
 
 export const SocialMedia = styled.div`

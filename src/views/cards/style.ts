@@ -6,32 +6,24 @@ export const Container = styled.section`
     align-items: center;
     width: 100vw;
     height: 100vh;
-
-    background-color: var(--secondary-background-color);
-    
+    /* background-color: var(--secondary-background-color);
     background: url('/thumb.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    object-fit: cover;
+    object-fit: cover; */
+
+    background-color: #fff;
 `
 export const ListContainer = styled.section`
     background-color: transparent;
 `
 
-export const ThumbContainer = styled.section`
+export const CardLinksContainer = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 1rem;
     backdrop-filter: blur(3px);
-    background: rgba(0, 0, 0, .6);
-
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: .5rem;
-    }
+    /* background: rgba(0, 0, 0, .8); */
 `

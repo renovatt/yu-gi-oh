@@ -9,7 +9,6 @@ export const Container = styled.header`
     width: 100%;
     height: 5rem;
     background: var(--linear-up-background-color);
-    /* border-bottom: 1px solid var(--border-primary-color); */
 
 `
 

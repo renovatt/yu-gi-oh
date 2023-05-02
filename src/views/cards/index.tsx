@@ -5,8 +5,10 @@ import Head from 'next/head'
 import { CardParamsProps } from '@/@types'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Image from 'next/image'
-import thumb from '../../../public/thumb.jpg'
+import slifer from '../../../public/slifer.jpg'
+import gallery from '../../../public/gallery.jpg'
+import magician from '../../../public/magician.jpg'
+import CardLink from '@/components/CardLink'
 
 const Cards = ({ card }: CardParamsProps) => {
     return (
@@ -20,15 +22,25 @@ const Cards = ({ card }: CardParamsProps) => {
                     <CardList card={card} />
                 </S.ListContainer>
 
-                <S.ThumbContainer>
-                    <Image
-                        src={thumb}
-                        alt='thumb_image'
-                        width={2000}
-                        height={2000}
-                        priority
-                    />
-                </S.ThumbContainer>
+                <S.CardLinksContainer>
+                    <CardLink
+                        thumb={slifer}
+                        alt='slifer-image'
+                        text='Bestas Divinas'
+                        route='/' />
+
+                    <CardLink
+                        thumb={magician}
+                        alt='magician-image'
+                        text='Galeria Magos'
+                        route='/' />
+
+                    <CardLink
+                        thumb={gallery}
+                        alt='gallery-image'
+                        text='Galeria de Cartas'
+                        route='/' />
+                </S.CardLinksContainer>
             </S.Container>
             <Footer />
         </>

@@ -22,14 +22,16 @@ export const Content = styled.section`
     width: 40%;
     height: 50%;
     margin-left: 3rem;
-    margin-top: -8rem;
+    margin-top: -4rem;
 `
 
 
 export const Text = styled.h1`
     font-weight: bold;
+    text-align: center;
     font-size: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
+    font-family: 'Bruno Ace', cursive;
     color: var(--text-main-color);
 `
 
@@ -37,6 +39,7 @@ export const Span = styled.span`
     font-weight: bold;
     font-size: 2.5rem;
     position: absolute;
+    font-family: 'Bruno Ace', cursive;
     color: var(--text-main-color);
 `
 

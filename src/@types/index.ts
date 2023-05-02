@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type ResponseCardProps = CardProps[]
 
 export type CardProps = {
@@ -42,3 +44,10 @@ export type InitialValueProps = {
     loadCards: () => Promise<void>;
     setCards: React.Dispatch<React.SetStateAction<ResponseCardProps>>;
 };
+
+export type CardLinkProos = {
+    thumb: StaticImageData;
+    alt: string;
+    text: string;
+    route: string;
+}

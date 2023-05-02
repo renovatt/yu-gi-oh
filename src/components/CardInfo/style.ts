@@ -7,8 +7,7 @@ export const Container = styled.section`
     align-items: center;
     width: 100vw;
     height: 100vh;
-
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    background-color: var(--secondary-background-color);
     background-image: url('/card-background.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -22,7 +21,7 @@ export const Content = styled.section`
     width: 100%;
     height: 100%;
     backdrop-filter: blur(2px);
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .8);
 `
 
 export const InfoContent = styled.section`
@@ -50,12 +49,14 @@ export const CardImageContent = styled.figure`
 `
 
 export const Text = styled.h4`
+    font-size: .8rem;
     color: var(--text-primary-color);
 `
 
 export const Span = styled.span`
-    color: var(--text-main-color);
+    font-size: .7rem;
     text-align: justify;
+    color: var(--text-clean-color);
 `
 
 export const BackButton = styled.button`
@@ -65,21 +66,19 @@ export const BackButton = styled.button`
     align-items: center;
     justify-content: center;
     right: 2rem;
-    width: 8rem;
+    width: 6rem;
     height: 2rem;
     color: var(--text-primary-color);
     padding: .5rem;
     outline: none;
     font-weight: bold;
-    font-size: 1.1rem;
-    background-color: var(--main-background-color);
+    font-size: .8rem;
     border-radius: .5rem;
+    background-color: var(--main-background-color);
     border: 1px solid var(--border-main-color);
 
     &:hover{
         transition: all .3s;
-        background-color: var(--primary-background-color);
-        border-color: var(--border-main-color);
-        color: var(--text-main-color);
+        opacity: .8;
     }
 `
