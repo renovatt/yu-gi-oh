@@ -45,6 +45,13 @@ export type UrlProps = {
     }
 }
 
+export type ImageProps = {
+    src: string;
+    alt: string;
+    cardId: string;
+    getCardId: (id: string) => void;
+}
+
 export type InitialValueProps = {
     quantity: number;
     error: boolean;

@@ -5,11 +5,14 @@ import Image from 'next/image'
 import logo from '../../../public/logo.png'
 
 const Header = () => {
+    const handleLoad = (event: React.SyntheticEvent<HTMLImageElement>): void => {
+        event.currentTarget.style.opacity = "1";
+    }
     return (
         <S.Container>
             <S.NavLink href={'/'}>
                 <S.LogoContainer>
-                    <Image src={logo} alt='logo' priority />
+                    <Image onLoad={handleLoad} src={logo} alt='logo' priority />
                 </S.LogoContainer>
             </S.NavLink>
 

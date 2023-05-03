@@ -43,8 +43,7 @@ export const Container = styled.section`
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: var(--main-background-color);
-
+    
     background-color: var(--secondary-background-color);
     background: url('/thumb.jpg');
     background-repeat: no-repeat;

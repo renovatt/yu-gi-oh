@@ -8,6 +8,8 @@ export const Container = styled.section`
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    
+    background-color: var(--secondary-background-color);
     background-image: url('/bg.png');
     background-repeat: no-repeat;
     background-position: center center;

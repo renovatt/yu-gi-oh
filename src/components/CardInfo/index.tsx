@@ -1,12 +1,17 @@
 import React from 'react'
 import * as S from './style'
 import Head from 'next/head'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { CardListParamsProps } from '@/@types'
+import SkeletonImage from '../Skeleton'
 
 const CardInfo = ({ cards: [card] }: CardListParamsProps) => {
     const router = useRouter()
+
+    const getCardId = (id: string) => {
+        router.push(`/card/${id}`)
+    }
+
     return (
         <>
             <Head>
@@ -28,12 +33,11 @@ const CardInfo = ({ cards: [card] }: CardListParamsProps) => {
                     </S.InfoContent>
 
                     <S.CardImageContent>
-                        <Image
+                        <SkeletonImage
+                            cardId={card.id as unknown as string}
+                            getCardId={getCardId}
                             src={`https://images.ygoprodeck.com/images/cards/${card.id}.jpg`}
-                            alt='card'
-                            width={500}
-                            height={500}
-                            priority />
+                            alt='card-image' />
                     </S.CardImageContent>
                     <S.BackButton onClick={() => router.back()}>Voltar</S.BackButton>
                 </S.Content>

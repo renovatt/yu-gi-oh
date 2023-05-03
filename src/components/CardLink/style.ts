@@ -43,8 +43,21 @@ export const Card = styled.section<BannerProps>`
 
     &:hover{
             img{
-                transition: all .3s;
-                transform: scale(110%);
+                transition: ease .3s;
+                transform: scale(1.14);
+                background-color: rgba(0, 0, 0, .8);
+            }
+
+            a{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100px;
+                transition: ease .3s;
+                transform: initial;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
             }
         }
 `
@@ -53,20 +66,8 @@ export const NavLink = styled(Link)`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: .5rem;
-    width: 10rem;
-    height: 2.5rem;
-    font-size: .8rem;
-    font-weight: bold;
+    font-size: .9rem;
     border-radius: .5rem;
-    padding: .5rem;
-    color: var(--text-primary-color);
-    background-color: var(--main-background-color);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, .8);
-    z-index: 2;
-
-    &:hover{
-        transition: all .3s;
-        opacity: .8;
-    }
+    color: var(--text-main-color);
+    transform: translateY(50px);
 `
