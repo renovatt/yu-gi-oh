@@ -9,7 +9,6 @@ export const Container = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 `
@@ -20,7 +19,7 @@ export const Card = styled.section<BannerProps>`
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    width: 17rem;
+    width: 15rem;
     height: 25rem;
     border-radius: .5rem;
     margin: 2rem;

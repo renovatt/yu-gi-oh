@@ -18,6 +18,10 @@ export const Form = styled.form`
     position: absolute;
     top: 1.2rem;
     right: 2rem;
+
+    @media (max-width: 29rem) {
+        width: 8rem;
+    }
 `
 
 export const Input = styled.input`
@@ -49,10 +53,37 @@ export const Container = styled.section`
     background-repeat: no-repeat;
     background-position: center center;
     object-fit: cover;
-
 `
-export const ListContainer = styled.section`
-    background-color: transparent;
+
+export const Span = styled.span<{open: boolean}>`
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    left: ${(props) => props.open ? '14rem' : '0'};
+    width: ${(props) => props.open ? 'auto' : '100%'};
+    height: ${(props) => props.open ? 'auto' : '100%'};
+    background-color: ${(props) => props.open ? 'none' : 'var(--secondary-background-color)'};
+    transition: ease .3s;
+    z-index: 9;
+
+    svg{
+        color: #fff;
+        width: 1.75rem;
+        height: 1.75rem;
+        margin-top: .5rem;
+}
+`
+
+export const ListContainer = styled.section<{open: boolean}>`
+    z-index: 1;
+    position: absolute;
+    transition: ease .3s;
+    width: ${(props) => props.open ? '17rem' : '3rem'};
+    overflow: ${(props) => props.open ? 'initial' : 'hidden'};
 `
 
 export const CardLinksContainer = styled.section`
@@ -62,5 +93,22 @@ export const CardLinksContainer = styled.section`
     width: 100%;
     height: 100%;
     backdrop-filter: blur(5px);
-    /* background: rgba(0, 0, 0, .8); */
+    background: rgba(0, 0, 0, .7);
+    
+    @media (max-width: 86.813rem){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow-y: scroll;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    @media (max-width: 66.813rem) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 3rem;
+    }
+
+    @media (max-width: 45.563rem) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `

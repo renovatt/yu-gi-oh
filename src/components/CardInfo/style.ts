@@ -12,6 +12,11 @@ export const Container = styled.section`
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    @media (max-width: 34.875rem) {
+        width: 100%;
+        height: 100%;
+    }
 `
 
 export const Content = styled.section`
@@ -22,6 +27,11 @@ export const Content = styled.section`
     height: 100%;
     backdrop-filter: blur(2px);
     background: rgba(0, 0, 0, .8);
+
+    @media (max-width: 34.875rem) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const InfoContent = styled.section`
@@ -31,6 +41,13 @@ export const InfoContent = styled.section`
     flex-direction: column;
     width: 40%;
     height: 60%;
+
+    @media (max-width: 34.875rem) {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        margin-top: 5rem;
+    }
 `
 
 export const CardImageContent = styled.figure`
@@ -44,6 +61,12 @@ export const CardImageContent = styled.figure`
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+
+    @media (max-width: 34.875rem) {
+        width: 100%;
+        padding: 2rem;
     }
 `
 

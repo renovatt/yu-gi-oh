@@ -7,7 +7,12 @@ export const Container = styled.section`
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: var(--secondary-background-color);
+    /* background-color: var(--secondary-background-color); */
+
+    @media (max-width: 78.438rem) {
+        width: 100%;
+        height: 100%;
+    }
 `
 
 export const Content = styled.nav`
@@ -17,6 +22,11 @@ export const Content = styled.nav`
     width: 100%;
     height: 100%;
     background-color: transparent;
+
+    @media (max-width: 78.438rem) {
+        flex-wrap: wrap;
+        margin-top: 8rem;
+    }
 `
 
 export const Text = styled.p`

@@ -8,12 +8,15 @@ import slifer from '../../../public/slifer.jpg'
 import gallery from '../../../public/gallery.jpg'
 import xyz from '../../../public/xyz.jpg'
 import CardLink from '@/components/CardLink'
+import { AiOutlineMenu } from 'react-icons/ai'
 
 const Cards = () => {
     const [searchValue, setSearchValue] = React.useState("");
     const handleSearchInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchValue(event.target.value);
     };
+
+    const [isOpen, setIsOpen] = React.useState(false)
 
     return (
         <>
@@ -32,7 +35,10 @@ const Cards = () => {
             </S.HeaderContainer>
 
             <S.Container className='fade'>
-                <S.ListContainer>
+                <S.ListContainer open={isOpen}>
+                    <S.Span open={isOpen}>
+                        <AiOutlineMenu onClick={() => setIsOpen(!isOpen)} />
+                    </S.Span>
                     <CardList searchValue={searchValue} />
                 </S.ListContainer>
 

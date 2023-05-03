@@ -6,6 +6,11 @@ export const ButtonContent = styled.section`
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-background-color);
+
+    @media (max-width: 78.438rem) {
+        margin-top: 5rem;
+        width: 100%;
+    }
 `
 
 export const Button = styled.button`
@@ -20,9 +25,19 @@ export const Button = styled.button`
     &:hover{
         opacity: .8;
     }
+
+    @media (max-width: 78.438rem) {
+        font-size: .6rem;
+        width: 6rem;
+    }
 `
 
 export const Span = styled.span`
     color: var(--text-main-color);
     padding: .5rem;
+    text-align: center;
+
+    @media (max-width: 78.438rem) {
+        font-size: .6rem;
+    }
 `
