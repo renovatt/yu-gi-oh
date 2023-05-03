@@ -3,11 +3,10 @@ import * as S from './style'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { CardParamsProps } from '@/@types'
+import { CardListParamsProps } from '@/@types'
 
-const CardInfo = ({ card: [card] }: CardParamsProps) => {
+const CardInfo = ({ cards: [card] }: CardListParamsProps) => {
     const router = useRouter()
-
     return (
         <>
             <Head>

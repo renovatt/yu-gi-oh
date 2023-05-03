@@ -28,8 +28,7 @@ export type CardListContextProviderProps = {
     children: React.ReactNode
 }
 
-export type CardParamsProps = {
-    card: CardProps[];
+export type CardSearchProps = {
     searchValue: string;
 }
 

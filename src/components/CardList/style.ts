@@ -48,7 +48,21 @@ export const List = styled.li`
 
 export const Text = styled.p`
     width: 100%;
+    text-align: center;
     font-size: .7rem;
     padding: .4rem;
     color: var(--text-clean-color);
+`
+
+export const Button = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: .7rem;
+    padding: .4rem;
+    font-weight: bold;
+    color: var(--text-primary-color);
+    margin-top: .2rem;
+    margin-bottom: .2rem;
 `
