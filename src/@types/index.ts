@@ -47,10 +47,12 @@ export type UrlProps = {
 }
 
 export type InitialValueProps = {
+    quantity: number;
     error: boolean;
     loader: boolean;
     cards: ResponseCardProps;
     clear: () => void;
+    loadMoreCards: () => void;
     loadCards: () => Promise<void>;
     setCards: React.Dispatch<React.SetStateAction<ResponseCardProps>>;
 };

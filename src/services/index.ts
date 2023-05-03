@@ -1,9 +1,17 @@
-export const getAllCards = async () => {
+export const getAllCards = async (offset: number) => {
+    // try {
+    //     const response = await fetch(`https://db.ygoprodeck.com/api/v7/cardinfo.php?&language=pt`)
+    //     if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
+    //     const data = await response.json();
+    //     return { response: data.data }
+    // } catch (error) {
+    //     return { error }
+    // }
     try {
-        const response = await fetch(`https://db.ygoprodeck.com/api/v7/cardinfo.php?&language=pt`)
+        const response = await fetch(`https://db.ygoprodeck.com/api/v7/cardinfo.php?&language=pt&num=${offset}&offset=0`)
         if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
         const data = await response.json();
-        return { response: data.data }
+        return { response: data }
     } catch (error) {
         return { error }
     }

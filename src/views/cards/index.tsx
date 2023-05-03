@@ -2,7 +2,7 @@ import React from 'react'
 import * as S from './style'
 import CardList from '@/components/CardList'
 import Head from 'next/head'
-import { CardParamsProps } from '@/@types'
+import { CardParamsProps, UrlProps } from '@/@types'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import slifer from '../../../public/slifer.jpg'
@@ -10,7 +10,7 @@ import gallery from '../../../public/gallery.jpg'
 import xyz from '../../../public/xyz.jpg'
 import CardLink from '@/components/CardLink'
 
-const Cards = ({ card }: CardParamsProps) => {
+const Cards = ({  offset, meta }:  UrlProps) => {
     const [searchValue, setSearchValue] = React.useState("");
     const handleSearchInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchValue(event.target.value);
@@ -34,7 +34,11 @@ const Cards = ({ card }: CardParamsProps) => {
 
             <S.Container className='fade'>
                 <S.ListContainer>
-                    <CardList card={card} searchValue={searchValue} />
+                    <CardList
+                        meta={meta}
+                        offset={offset}
+                        // card={card}
+                        searchValue={searchValue} />
                 </S.ListContainer>
 
                 <S.CardLinksContainer>
