@@ -2,14 +2,17 @@ import React from 'react'
 import * as S from './style'
 import Image from 'next/image'
 import { CardLinkProos } from '@/@types'
+import { useRouter } from 'next/router'
 
 const CardLink = ({ thumb, alt, text, route }: CardLinkProos) => {
     const handleLoad = (event: React.SyntheticEvent<HTMLImageElement>): void => {
         event.currentTarget.style.opacity = "1";
     }
+
+    const router = useRouter()
     return (
         <S.Container>
-            <S.Card>
+            <S.Card onClick={() => router.push(route)}>
                 <Image
                     onLoad={handleLoad}
                     src={thumb}
