@@ -8,7 +8,8 @@ export const Container = styled.header`
     padding: .5rem 2rem;
     width: 100%;
     height: 5rem;
-    background: var(--linear-up-background-color);
+    overflow: hidden;
+    background: var(--linear-footer-background);
 
 `
 

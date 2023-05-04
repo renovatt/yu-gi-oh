@@ -27,14 +27,14 @@ const Cards = () => {
                 <Header />
                 <S.Form>
                     <S.Input
+                        onClick={() => setIsOpen(!isOpen)}
                         type='search'
                         value={searchValue}
                         placeholder='O Lendário Exodia Encarnado'
                         onChange={handleSearchInputChange} />
                 </S.Form>
             </S.HeaderContainer>
-
-            <S.Container className='fade'>
+            <S.Container className='fade' >
                 <S.ListContainer open={isOpen}>
                     <S.Span open={isOpen}>
                         <AiOutlineMenu onClick={() => setIsOpen(!isOpen)} />

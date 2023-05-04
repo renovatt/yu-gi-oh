@@ -8,12 +8,11 @@ export const GlobalStyle = createGlobalStyle`
     --main-background-color: #ffffff;
     --primary-background-color: #9d04f3;
     --secondary-background-color: #10002b;
-    
-    /* --primary-background-color: #9d04f3; */
-    /* --secondary-background-color: #10002b; */
 
-    --linear-up-background-color: linear-gradient(180deg, rgba(53,12,54,1) 0%, rgba(157,4,243,1) 100%);
-    --linear-down-background-color: linear-gradient(0deg, rgba(53,12,54,1) 0%, rgba(157,4,243,1) 100%);
+    --linear-background-color: linear-gradient(123deg, rgba(172,59,237,1) 6%, rgba(96,67,184,1) 49%, rgba(62,48,142,1) 100%);
+    --linear-footer-background: linear-gradient(254deg, rgba(172,59,237,1) 6%, rgba(96,67,184,1) 49%, rgba(62,48,142,1) 100%);
+    --linear-bar-background: linear-gradient(0deg, rgba(172,59,237,1) 6%, rgba(96,67,184,1) 49%, rgba(62,48,142,1) 100%);
+
     
     --text-main-color: #ffffff;
     --text-primary-color: #9d04f3;
@@ -58,7 +57,7 @@ main{
     background-color: var(--main-background-color);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: var(--primary-background-color);
+    background-color: #ac3bed;
 }
 
 html {

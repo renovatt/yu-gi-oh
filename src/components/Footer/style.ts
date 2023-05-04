@@ -11,7 +11,7 @@ export const Footer = styled.footer`
     height: 5rem;
     width: 100%;
     padding: 2rem calc(4rem + 15px) 2rem 4rem;
-    background: var(--linear-down-background-color);
+    background: var(--linear-background-color);
 
     @media(max-width: 55.625rem) {
         flex-direction: column;
@@ -68,7 +68,7 @@ export const FooterLink = styled.a`
         transition: .2s;
 
         &:hover{
-            color: var(--svg-secondary-color);
+            color: var(--svg-primary-color);
             transform: scale(1.2);
         }
     }

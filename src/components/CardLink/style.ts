@@ -19,12 +19,13 @@ export const Card = styled.section<BannerProps>`
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    width: 15rem;
+    width: 17rem;
     height: 25rem;
     border-radius: .5rem;
     margin: 2rem;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, .8);
     overflow: hidden;
+    cursor: pointer;
 
     /* background-color: var(--main-background-color); */
     /* background: ${(props) => props.banner?.backgroundImage}; */
