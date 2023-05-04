@@ -1,11 +1,28 @@
 import styled from "styled-components";
 
+export const Container = styled.section`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: var(--secondary-background-color);
+    /* background: url('/thumb.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+    /* object-fit: cover; */
+
+    @media (max-width: 66.875rem){
+        justify-content: flex-start;
+    }
+`
+
 export const HeaderContainer = styled.section`
      display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100%;
     position: relative;
 `
 
@@ -41,17 +58,17 @@ export const Input = styled.input`
     }
 `
 
-export const Container = styled.section`
+export const Content = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: var(--secondary-background-color);
     /* background: url('/thumb.png'); */
-    background-repeat: no-repeat;
-    background-position: center center;
-    object-fit: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+    /* object-fit: cover; */
 `
 
 export const Span = styled.span<{open: boolean}>`
@@ -63,9 +80,10 @@ export const Span = styled.span<{open: boolean}>`
     top: 0;
     right: 1rem;
     left: ${(props) => props.open ? '14rem' : '0'};
-    width: ${(props) => props.open ? 'auto' : '100%'};
-    height: ${(props) => props.open ? 'auto' : '100%'};
-    background: ${(props) => props.open ? 'none' : 'var(--linear-bar-background)'};
+    width: ${(props) => props.open ? '3rem' : '100%'};
+    height: ${(props) => props.open ? '3rem' : '100%'};
+    /* background: ${(props) => props.open ? 'none' : 'var(--linear-bar-background)'}; */
+    background: var(--linear-bar-background);
     transition: ease .3s;
     z-index: 9;
 
@@ -78,11 +96,11 @@ export const Span = styled.span<{open: boolean}>`
 `
 
 export const ListContainer = styled.section<{open: boolean}>`
-    z-index: 1;
+    z-index: 9;
     position: absolute;
     top: 0;
     left: 0;
-
+    height: 100%;
     transition: ease .3s;
     width: ${(props) => props.open ? '17rem' : '3rem'};
     overflow: ${(props) => props.open ? 'initial' : 'hidden'};
@@ -94,11 +112,12 @@ export const CardLinksContainer = styled.section`
     align-items: center;
     width: 100%;
     height: 100%;
+    background-color: var(--secondary-background-color);
 
-    backdrop-filter: blur(1px);
+    /* backdrop-filter: blur(1px); */
     /* background: rgba(0, 0, 0, .6); */
     
-    @media (max-width: 86.813rem){
+    @media (max-width: 76.813rem){
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         overflow-y: scroll;

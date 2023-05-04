@@ -6,7 +6,7 @@ export const Container = styled.section`
     justify-content: center;
     align-items: center;
     width: 17rem;
-    height: 100vh;
+    height: 100%;
     background-color: var(--secondary-background-color);
 `
 

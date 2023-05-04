@@ -23,46 +23,48 @@ const Cards = () => {
             <Head>
                 <title>Yu-Gi-Oh | Lista de Cartas</title>
             </Head>
-            <S.HeaderContainer>
-                <Header />
-                <S.Form>
-                    <S.Input
-                        onClick={() => setIsOpen(!isOpen)}
-                        type='search'
-                        value={searchValue}
-                        placeholder='O Lendário Exodia Encarnado'
-                        onChange={handleSearchInputChange} />
-                </S.Form>
-            </S.HeaderContainer>
-            <S.Container className='fade' >
-                <S.ListContainer open={isOpen}>
-                    <S.Span open={isOpen}>
-                        <AiOutlineMenu onClick={() => setIsOpen(!isOpen)} />
-                    </S.Span>
-                    <CardList searchValue={searchValue} />
-                </S.ListContainer>
+            <S.Container>
+                <S.HeaderContainer>
+                    <Header />
+                    <S.Form>
+                        <S.Input
+                            onClick={() => setIsOpen(!isOpen)}
+                            type='search'
+                            value={searchValue}
+                            placeholder='O Lendário Exodia Encarnado'
+                            onChange={handleSearchInputChange} />
+                    </S.Form>
+                </S.HeaderContainer>
+                <S.Content className='fade' >
+                    <S.ListContainer open={isOpen}>
+                        <S.Span open={isOpen}>
+                            <AiOutlineMenu onClick={() => setIsOpen(!isOpen)} />
+                        </S.Span>
+                        <CardList searchValue={searchValue} />
+                    </S.ListContainer>
 
-                <S.CardLinksContainer>
-                    <CardLink
-                        thumb={slifer}
-                        alt='slifer-image'
-                        text='Bestas Divinas'
-                        route='/divine-beasts' />
+                    <S.CardLinksContainer>
+                        <CardLink
+                            thumb={slifer}
+                            alt='slifer-image'
+                            text='Bestas Divinas'
+                            route='/divine-beasts' />
 
-                    <CardLink
-                        thumb={xyz}
-                        alt='xyz-image'
-                        text='Monstros XYZ'
-                        route='/xyz-cards' />
+                        <CardLink
+                            thumb={xyz}
+                            alt='xyz-image'
+                            text='Monstros XYZ'
+                            route='/xyz-cards' />
 
-                    <CardLink
-                        thumb={gallery}
-                        alt='gallery-image'
-                        text='Todas de Cartas'
-                        route='/gallery-cards' />
-                </S.CardLinksContainer>
+                        <CardLink
+                            thumb={gallery}
+                            alt='gallery-image'
+                            text='Todas de Cartas'
+                            route='/gallery-cards' />
+                    </S.CardLinksContainer>
+                </S.Content>
+                <Footer />
             </S.Container>
-            <Footer />
         </>
     )
 }
