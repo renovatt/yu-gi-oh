@@ -34,6 +34,13 @@ export default class MyDocument extends Document {
         <Head>
         <meta charSet="utf-8" />
         <meta name="author" content="Wildemberg Renovato de Lima" />
+        <meta name="keywords" content="yu-gi-oh, cards, YU-GI-OH, cartas de yu-gi-oh, yugioh" />
+        <meta name="description" content="Yu-Gi-Oh Cards " />
+        <meta property="og:title" content="Yu-Gi-Oh Cards" />
+        <meta property="og:description" content="Informações das cartas do anime e do jogo" />
+        <meta property="og:image" content="https://yu-gi-oh-cards-renovatt.vercel.app/web-1.png" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/logo192.png" />
         <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500;700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet"></link>
         </Head>
