@@ -18,7 +18,9 @@ const Cards = () => {
 
     const [isOpen, setIsOpen] = React.useState(false)
 
-    
+    const handeSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault()
+    }
 
     return (
         <>
@@ -28,7 +30,7 @@ const Cards = () => {
             <S.Container>
                 <S.HeaderContainer>
                     <Header />
-                    <S.Form>
+                    <S.Form onSubmit={handeSubmit}>
                         <S.Input
                             onClick={() => setIsOpen(!isOpen)}
                             type='search'
