@@ -3,6 +3,7 @@ import * as S from './style'
 import { useRouter } from 'next/router'
 import { UrlProps } from '@/@types'
 import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
+import { AiFillFastForward, AiFillFastBackward } from 'react-icons/ai'
 
 const Pagination = ({ offset, meta, url }: & UrlProps & { url: string }) => {
 
@@ -26,11 +27,23 @@ const Pagination = ({ offset, meta, url }: & UrlProps & { url: string }) => {
         const newOffset = Math.min(offset + 5, (totalPages - 1) * 5);
         router.push(`${url}/?page=${newOffset}`);
     };
+
+    const handlePrevPageMore = () => {
+        const newOffset = Math.max(offset - 255, 0);
+        router.push(`${url}/?page=${newOffset}`);
+    };
+
+    const handleNextPageMore = () => {
+        const newOffset = Math.min(offset + 255, (totalPages - 1) * 5);
+        router.push(`${url}/?page=${newOffset}`);
+    };
     return (
         <S.ButtonContent>
+            <S.Button onClick={handlePrevPageMore}><AiFillFastBackward /></S.Button>
             <S.Button onClick={handlePrevPage}><GrFormPrevious /></S.Button>
             <S.Span>Página {currentPage} de {totalPages}</S.Span>
             <S.Button onClick={handleNextPage}><GrFormNext /></S.Button>
+            <S.Button onClick={handleNextPageMore}><AiFillFastForward /></S.Button>
         </S.ButtonContent>
     )
 }
