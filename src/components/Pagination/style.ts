@@ -14,16 +14,19 @@ export const ButtonContent = styled.section`
 `
 
 export const Button = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: .5rem;
     border-radius: .5rem;
     width: 2rem;
+    height: 2rem;
     text-align: center;
     font-weight: bold;
-    color: var(--text-primary-color);
 
     svg{
-        width: 1.75rem;
-        height: 1.75rem;
+        width: 1.45rem;
+        height: 1.45rem;
     }
 
     &:hover{
