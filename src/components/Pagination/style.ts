@@ -14,22 +14,26 @@ export const ButtonContent = styled.section`
 `
 
 export const Button = styled.button`
-    padding: .5rem;
     margin: .5rem;
     border-radius: .5rem;
-    width: 10rem;
+    width: 2rem;
     text-align: center;
     font-weight: bold;
     color: var(--text-primary-color);
+
+    svg{
+        width: 1.75rem;
+        height: 1.75rem;
+    }
 
     &:hover{
         opacity: .8;
     }
 
-    @media (max-width: 78.438rem) {
+    /* @media (max-width: 78.438rem) {
         font-size: .6rem;
         width: 6rem;
-    }
+    } */
 `
 
 export const Span = styled.span`

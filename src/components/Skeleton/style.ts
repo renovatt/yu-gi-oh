@@ -8,6 +8,10 @@ export const Image = styled.img`
     grid-area: 1/1;
     opacity: 0;
     transition: .2s;
+
+    &:hover{
+        transform: scale(1.05);
+    }
 `
 
 export const Skeleton = styled.div`

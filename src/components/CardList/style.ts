@@ -48,7 +48,7 @@ export const List = styled.li`
 
 export const Text = styled.p`
     width: 100%;
-    text-align: center;
+    text-align: start;
     font-size: .7rem;
     padding: .4rem;
     color: var(--text-clean-color);

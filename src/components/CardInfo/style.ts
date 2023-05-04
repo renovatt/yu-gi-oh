@@ -8,7 +8,7 @@ export const Container = styled.section`
     width: 100vw;
     height: 100vh;
     background-color: var(--secondary-background-color);
-    background-image: url('/card-background.jpg');
+    background-image: url('/card-background-min.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

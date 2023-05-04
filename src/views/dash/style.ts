@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styled from "styled-components";
 
 export const Container = styled.section`
@@ -10,7 +9,7 @@ export const Container = styled.section`
     height: 100vh;
     
     background-color: var(--secondary-background-color);
-    background-image: url('/bg.png');
+    background-image: url('/bg-min.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

@@ -2,6 +2,7 @@ import React from 'react'
 import * as S from './style'
 import { useRouter } from 'next/router'
 import { UrlProps } from '@/@types'
+import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
 
 const Pagination = ({ offset, meta, url }: & UrlProps & { url: string }) => {
 
@@ -27,9 +28,9 @@ const Pagination = ({ offset, meta, url }: & UrlProps & { url: string }) => {
     };
     return (
         <S.ButtonContent>
-            <S.Button onClick={handlePrevPage}>Anterior</S.Button>
+            <S.Button onClick={handlePrevPage}><GrFormPrevious /></S.Button>
             <S.Span>Página {currentPage} de {totalPages}</S.Span>
-            <S.Button onClick={handleNextPage}>Próxima</S.Button>
+            <S.Button onClick={handleNextPage}><GrFormNext /></S.Button>
         </S.ButtonContent>
     )
 }

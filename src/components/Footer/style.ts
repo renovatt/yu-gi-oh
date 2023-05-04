@@ -41,6 +41,10 @@ export const FooterCopyright = styled.span`
     margin: .2rem;
     font-size: .8rem;
     color: var(--text-main-color);
+
+    @media(max-width: 55.625rem) {
+        font-size: .6rem;
+    }
 `
 
 export const SocialMedia = styled.div`
@@ -68,7 +72,7 @@ export const FooterLink = styled.a`
         transition: .2s;
 
         &:hover{
-            color: var(--svg-primary-color);
+            color: var(--svg-secondary-color);
             transform: scale(1.2);
         }
     }

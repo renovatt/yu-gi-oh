@@ -34,7 +34,7 @@ export const CardListContextProvider = ({ children }: CardListContextProviderPro
     }
 
     async function loadMoreCards() {
-        setQuantity(quantity + 25)
+        setQuantity(quantity + 525)
     }
 
     async function clear() {
