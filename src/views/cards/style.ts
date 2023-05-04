@@ -82,8 +82,8 @@ export const Span = styled.span<{open: boolean}>`
     left: ${(props) => props.open ? '14rem' : '0'};
     width: ${(props) => props.open ? '3rem' : '100%'};
     height: ${(props) => props.open ? '3rem' : '100%'};
-    /* background: ${(props) => props.open ? 'none' : 'var(--linear-bar-background)'}; */
-    background: var(--linear-bar-background);
+    background: ${(props) => props.open ? 'none' : 'var(--linear-bar-background)'};
+    /* background: var(--linear-bar-background); */
     transition: ease .3s;
     z-index: 9;
 
@@ -92,6 +92,8 @@ export const Span = styled.span<{open: boolean}>`
         width: 1.75rem;
         height: 1.75rem;
         margin-top: .5rem;
+        padding: .1rem;
+        background: ${(props) => props.open ? 'var(--linear-bar-background)' : 'none'};
 }
 `
 
